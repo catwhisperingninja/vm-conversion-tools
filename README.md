@@ -5,7 +5,8 @@ A Windows 10/11/Server environment is needed to run the `mvmc` and `dsfok` utili
 Qemu is also a great option for both [Linux](https://www.qemu.org/docs/master/about/build-platforms.html) and [Windows](https://cloudbase.it/qemu-img-windows).    
 
 ### The Process  
-(Credit to <https://gist.github.com/rahilwazir/69a750b70348459875cbf40935af02cb>)      
+(Credit to <https://gist.github.com/rahilwazir/69a750b70348459875cbf40935af02cb>)   
+Your file to convert must be in the same directory as the tool when it runs.   
 
 ### Use included ovftools + PDF manuals to convert .OVA + other formats  
 These are only necessary if you need to convert from/to .OVA, .OVF, and .VMX.  
