@@ -7,11 +7,11 @@ Qemu is also a great option for both [Linux](https://www.qemu.org/docs/master/ab
 ### The Process  
 (Credit to <https://gist.github.com/rahilwazir/69a750b70348459875cbf40935af02cb>)      
 
-### USE INCLUDED OVF FILES + PDF MANUALS TO CONVERT FROM .OVA + OTHER VM FORMATS
+### Use included ovftools + PDF manuals to convert .OVA + other formats  
 These are only necessary if you need to convert from/to .OVA, .OVF, and .VMX.  
 
 ### The VHDX format, not VHD, is supported by Windows 11. Windows Server has not been tested.
-Install `mvmc_setup.msi`  
+Install `mvmc_setup.msi`    
 Open Powershell as admin and run:  
 `Import-Module 'C:\Program Files\Microsoft Virtual Machine Converter\MvmcCmdlet.psd1'`  
 Then run:   
@@ -20,7 +20,7 @@ Then run:
 #### If you see this error: 
 ConvertTo-MvmcVirtualHardDisk : "The entry 1 (_or any number_) is not a supported disk database entry for the descriptor."
 
-### FIX ENTRY [NUMBER] ERROR WITH DSFOK TOOLS
+### Fix entry [number] error with dsfok tools  
 Download and extract dsfok tools  
 Use `dsfo.exe "c:\temp\disk2.vmdk" 512 1024 descriptor1.txt` to extract the descriptor  
 Edit the descriptor file in Notepad++: comment out this line as so: **#ddb.toolsInstallType = "4"**  
