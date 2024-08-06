@@ -1,0 +1,14 @@
+[version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+AddReg = DosHere.Reg
+
+[DosHere.Reg]
+HKCR,Directory\Shell\DosHere,,,"%DosHereAccel%"
+HKCR,Directory\Shell\DosHere\command,,,"%11%\cmd.exe /k cd "%1""
+HKCR,Drive\Shell\DosHere,,,"%DosHereAccel%"
+HKCR,Drive\Shell\DosHere\command,,,"%11%\cmd.exe /k cd "%1""
+
+[Strings]
+DosHereAccel="DOS &Prompt Here"

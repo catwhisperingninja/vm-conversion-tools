@@ -1,0 +1,55 @@
+FLIP v.1.02  Copyright 2001 Dariusz Stanislawek
+freezip@bigfoot.com
+
+This is a stand-alone implementation of the "flip" command from Edxor.
+
+FLIP will do a simple bitwise reversion operation on any file; hiding
+the headers from scanners and grep tools that search for duplicate headers 
+in merged files. These modified files can then be appended to another file 
+with a DOS "copy /b" command or with Edxor's "Insert" function to safely hide them. 
+
+Flip supports drag and drop file handling. 
+
+Flip.exe can also be used to temporarily disable an app or file 
+from running or being accessed by unauthorised users without advertising 
+the fact. They just get an error message.
+
+TO HIDE SOMETHING USING THE FILE FLIPPER FROM THE COMMAND LINE:
+
+1) run:  flip secret.zip   
+2) do:  copy /b container.jpg + secret.zip  new.jpg   
+
+TO RETRIEVE:
+
+1) run:  flip new.jpg
+2) unzip new.jpg with your zip-utility after renaming the 
+   extension to *.zip
+
+
+USING FLIP'S DRAG AND DROP FUNCTION
+
+TO HIDE SOMETHING:
+
+1) Drag a file to be hidden (usually a zip) onto "flip.exe" to flip it.
+2) Open a host-file with Edxor; make sure the cursor is at the bottom by
+   clicking the "Down" button; and choose "File/Insert" to append the 
+   flipped file to host 
+3) Click "File/Save".
+
+TO RETRIEVE:
+
+1) Drag host-file onto flip.exe
+2) Temporarily change host-files extension to *.zip (***) 
+3) Extract hidden material; re-flip the host-file and re-name the extension to hide it again.
+
+(***) If the host file is an under-a-100kb *.exe, instead of an image 
+     file, you won't have to rename the extension when extracting zips. Zip utilitys 
+     recognise the exe extension...M$ Notepad.exe would be such a file :)
+
+
+DISCLAIMER
+
+"FLIP" IS SUPPLIED AS IS. THE AUTHOR DISCLAIMS ALL WARRANTIES, EXPRESSED 
+OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF MERCHANTABILITY 
+AND OF FITNESS FOR ANY PURPOSE. THE AUTHOR ASSUMES NO LIABILITY FOR DAMAGES, 
+DIRECT OR CONSEQUENTIAL, WHICH MAY RESULT FROM THE USE OF "FLIP". 
