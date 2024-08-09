@@ -20,12 +20,13 @@ Then run:
 
 #### If you see this error: 
 ConvertTo-MvmcVirtualHardDisk : "The entry 1 (_or any number_) is not a supported disk database entry for the descriptor."  
-Use `dsfok` as described below:  
+Use `dsfok` as described below:     
 
 #### Fix entry <number> error with dsfok tools  
 Download and extract dsfok tools  
 Use `dsfo.exe "c:\temp\disk2.vmdk" 512 1024 descriptor1.txt` to extract the descriptor  
-Edit the descriptor file in Notepad++: comment out this line as so: **#ddb.toolsInstallType = "4"**  
+Edit the descriptor file in Notepad++: comment out this line as so:   
+**#ddb.toolsInstallType = "4"**    
 
 _(This could be another number. Original Gist author deleted one NULL character from the end to keep the file size of 1024 bytes but wasn't sure if this was needed.)_
 
