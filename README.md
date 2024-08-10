@@ -1,5 +1,6 @@
 # VMWare Conversion Tools
 Offering VMWare refugees conversion to nearly all formats, with now-offline but required utilities included.   
+This is offered as a public service. No responsibility will be taken if conversion does not go according to plan.  
 This repo focuses on converting VMware .vmdk files to .vhdx for use in Hyper-V, but ovftool can convert to/from many VM types.  
 A Windows 10/11/Server environment is needed to run the `mvmc` and `dsfok` utilities.  
 Qemu is also a great option for both [Linux](https://www.qemu.org/docs/master/about/build-platforms.html) and [Windows](https://cloudbase.it/qemu-img-windows).    
@@ -34,5 +35,6 @@ Use `dsfi.exe "c:\temp\disk2.vmdk" 512 1024 descriptor1.txt` to inject the descr
 Repeat these steps for any other .vmdk  
 Reissue the `ConvertTo-MvmcVirtualHardDisk` command  
 Place the new .vhdx file in your Hyper-V virtual disk directory  
+Remember to disable Secure Boot prior to launching the converted VM    
 
 
